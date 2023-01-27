@@ -2,7 +2,7 @@
 
 This repository serves as the official code base for INFO 153B/253B for Spring'23. This repo will house all code from friday labs and also code snippets used in monday lectures!
 
-[## Intro to Python Programming](./Intro%20to%20Python/)
+[## Intro to Python Programming](./Intro%20to%20Python/Intro%20to%20Python.md)
 
 Topics we covered:
     1. Fundamentals of computers and memory storage
@@ -13,9 +13,10 @@ Topics we covered:
     5. Functions
     6. Classes and Objects in Python
 
-[## Tooling - Understanding Github and Postman](./Tooling)
+[## Tooling - Understanding Github and Postman](./Tooling/Github.md)
 
 Topics we covered:
     1. Basics of Github - Repositories, branching, staging, commits, fetch, push, pull
     2. Working together on Github - Merge conflics
-    3. Postman - Making calls, 
+
+[## Intro to Flask - Understanding the basics of Flask and setting up your first server](./Intro%20to%20Flask/README.md)

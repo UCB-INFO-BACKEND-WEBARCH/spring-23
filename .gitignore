@@ -1,1 +1,4 @@
 .DS_Store
+keys/
+advance_planning/
+*.pyc
