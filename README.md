@@ -31,3 +31,15 @@ Topics we covered:
     3. Different API Methods - GET, PUT, POST and DELETE
     4. Getting data into your API (I) - Overview of URL Params, Query Params, API Body
     5. Using URL Params to get input into your API
+
+[## Diving Deeper into Flask](./Diving%20Deeper%20into%20Flask/README.md)
+
+Topics we covered:
+1. Deep dive into the POST HTTP method
+2. Getting data using different techniques
+    1. Query Params
+    2. Request Body
+    3. Form Data
+    4. File Uploads
+3. Response objects in Flask
+4. API Error codes
