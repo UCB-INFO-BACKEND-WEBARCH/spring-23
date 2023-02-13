@@ -112,7 +112,7 @@ def form():
     return f"Hi, {name}!"
 ```
 
-For forms, we use the ``request.form` method. Similar to `request.args`, this again gives us an `ImmutableMultiDict` and we can use key indexing to accesssing the data we need.
+For forms, we use the `request.form` method. Similar to `request.args`, this again gives us an `ImmutableMultiDict` and we can use key indexing to accesssing the data we need.
 
 ## What method to use and when?
 

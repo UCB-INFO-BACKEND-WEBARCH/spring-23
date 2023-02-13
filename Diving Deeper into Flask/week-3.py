@@ -31,6 +31,8 @@ def getResult(name, userLocations=None):
     return jsonify(result), 200
 
 # API endpoint that allows multiple routes in one and uses different input types
+
+
 @app.route("/arg")
 @app.route("/arg/<name>", methods=['GET'])
 def arg(name=None):  # name takes the value from URL param
@@ -41,6 +43,8 @@ def arg(name=None):  # name takes the value from URL param
     return getResult(name)
 
 # API endpoint to handle put and delete methods
+
+
 @app.route("/update/<name>", methods=["PUT", "DELETE"])
 def update(name):
     statusCode = 400
@@ -61,15 +65,19 @@ def update(name):
             "location": userLocation
         }), statusCode
     if request.method == "DELETE":
-        pass # Should be very similar to PUT case
+        pass  # Should be very similar to PUT case
 
 # API endpoint that gets name key as part of form-data
+
+
 @app.route("/arg/form", methods=['GET'])
 def getWithForm():
     name = request.form.get('name')
     return getResult(name)
 
 # API endpoint that allows a new file upload and then uses that for finding a name
+
+
 @app.route("/arg/file", methods=['GET'])
 def getWithFile():
     locationsFile = request.files.get('locationFile')
