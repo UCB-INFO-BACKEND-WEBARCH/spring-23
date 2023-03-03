@@ -1,0 +1,12 @@
+version: '3'
+services:
+  flask1:
+    build: ./flask1
+    container_name: "Server_1"
+    ports:
+      - "8000:5050"
+  flask2:
+    build: ./flask2
+    container_name: "Server_2"
+    ports:
+      - "8001:5050"

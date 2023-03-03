@@ -43,3 +43,12 @@ Topics we covered:
     4. File Uploads
 3. Response objects in Flask
 4. API Error codes
+
+[## Introduction to Containers and Docker](./Docker/README.md)
+
+Topics we covered:
+1. Virtualization and Virtual Machines
+2. Containers
+3. Docker
+4. Running Flask via Docker
+5. Docker Compose
