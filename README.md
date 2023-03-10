@@ -52,3 +52,8 @@ Topics we covered:
 3. Docker
 4. Running Flask via Docker
 5. Docker Compose
+
+[## Using Flask and Postgres with Docker Compose](./Flask%2C%20DBs%20and%20Docker/README.md)
+
+Topics we covered:
+1. 

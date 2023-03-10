@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS cat (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(80),
+    color VARCHAR(80),
+    breed VARCHAR(80)
+);
