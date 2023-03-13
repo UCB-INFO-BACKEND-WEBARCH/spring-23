@@ -1,0 +1,68 @@
+version: "3.7"
+services:
+  job_broker:
+      image: redis:latest
+      container_name: job_broker
+
+  job_db:
+      image: postgres:latest
+      container_name: job_db
+      environment:
+        POSTGRES_USER: dbc
+        POSTGRES_PASSWORD: dbc
+        POSTGRES_DB: celery
+      volumes:
+        - postgres-volume:/var/lib/postgresql/data
+
+  job_worker_01:
+      build: ./job_worker/.
+      container_name: job_worker_01
+      volumes:
+        - ./job_tasks/job_tasks.py:/app/job_tasks.py
+      environment:
+        CELERY_BROKER_URL: redis://job_broker:6379
+        CELERY_RESULT_BACKEND: db+postgresql://dbc:dbc@job_db:5432/celery
+        NLTK_DATA: /nltk_data
+      depends_on:
+        - job_broker
+        - job_db
+
+  job_worker_02:
+      build: ./job_worker/.
+      container_name: job_worker_02
+      volumes:
+        - ./job_tasks/job_tasks.py:/app/job_tasks.py
+      environment:
+        CELERY_BROKER_URL: redis://job_broker:6379
+        CELERY_RESULT_BACKEND: db+postgresql://dbc:dbc@job_db:5432/celery
+        NLTK_DATA: /nltk_data
+      depends_on:
+        - job_broker
+        - job_db
+
+  job_manager:
+    build: ./job_manager/
+    image: job-manager-image
+    volumes:
+        - ./job_tasks/job_tasks.py:/app/job_tasks.py
+    environment:
+      CELERY_BROKER_URL: redis://job_broker:6379
+      CELERY_RESULT_BACKEND: db+postgresql://dbc:dbc@job_db:5432/celery
+    ports:
+      - "5050:5000"
+    depends_on:
+        - job_broker
+        - job_db
+        - job_worker_01
+        - job_worker_02
+  job_viewer:  
+    image: mher/flower
+    environment:
+      - CELERY_BROKER_URL=redis://job_broker:6379
+      - FLOWER_PORT=8888
+    ports:  
+      - 8888:8888
+    depends_on:
+        - job_broker
+volumes:
+  postgres-volume: {}

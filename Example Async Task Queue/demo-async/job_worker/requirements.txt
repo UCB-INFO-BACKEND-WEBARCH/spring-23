@@ -1,0 +1,8 @@
+celery==5.2.7
+redis==4.5.1
+postgres==4.0
+psycopg2-binary==2.9.5
+Flask-SQLAlchemy==3.0.3
+beautifulsoup4==4.11.2
+requests==2.28.2
+nltk==3.8.1
