@@ -2,7 +2,7 @@
 
 This repository serves as the official code base for INFO 153B/253B for Spring'23. This repo will house all code from friday labs and also code snippets used in monday lectures!
 
-[## Intro to Python Programming](./Intro%20to%20Python/Intro%20to%20Python.md)
+## [Intro to Python Programming](./Intro%20to%20Python/Intro%20to%20Python.md)
 
 Topics we covered:
 1. Fundamentals of computers and memory storage
@@ -13,13 +13,13 @@ Topics we covered:
 5. Functions
 6. Classes and Objects in Python
 
-[## Tooling - Understanding Github and Postman](./Tooling/Github.md)
+## [Tooling - Understanding Github and Postman](./Tooling/Github.md)
 
 Topics we covered:
 1. Basics of Github - Repositories, branching, staging, commits, fetch, push, pull
 2. Working together on Github - Merge conflics
 
-[## Intro to Flask - Understanding the basics of Flask and setting up your first server](./Intro%20to%20Flask/README.md)
+## [Intro to Flask - Understanding the basics of Flask and setting up your first server](./Intro%20to%20Flask/README.md)
 
 Topics we covered:
 1. DNS and how it works?
@@ -32,7 +32,7 @@ Topics we covered:
     4. Getting data into your API (I) - Overview of URL Params, Query Params, API Body
     5. Using URL Params to get input into your API
 
-[## Diving Deeper into Flask](./Diving%20Deeper%20into%20Flask/README.md)
+## [Diving Deeper into Flask](./Diving%20Deeper%20into%20Flask/README.md)
 
 Topics we covered:
 1. Deep dive into the POST HTTP method
@@ -44,7 +44,7 @@ Topics we covered:
 3. Response objects in Flask
 4. API Error codes
 
-[## Introduction to Containers and Docker](./Docker/README.md)
+## [Introduction to Containers and Docker](./Docker/README.md)
 
 Topics we covered:
 1. Virtualization and Virtual Machines
@@ -53,7 +53,19 @@ Topics we covered:
 4. Running Flask via Docker
 5. Docker Compose
 
-[## Using Flask and Postgres with Docker Compose](./Flask%2C%20DBs%20and%20Docker/README.md)
+## [Using Flask and Postgres with Docker Compose](./Flask%2C%20DBs%20and%20Docker/README.md)
 
 Topics we covered:
-1. 
+1. Why do we need Databases?
+2. Difference between Relational and Non-Relational Databases
+3. Setting up Postgres using Docker
+4. Using Postgres with Flask for data storage and processing
+
+## [Async Task Queues (Using Docker)](./Async%20Task%20Queues/README.md)
+
+Topics we covered:
+1. Need for Async Task Queues
+2. What is a worker?
+3. Using Redis workers
+4. Setting up a worker in Flask
+5. Pushing it all to Docker

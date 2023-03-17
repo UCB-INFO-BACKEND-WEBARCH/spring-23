@@ -28,9 +28,9 @@ def get_cats():
     return jsonify([cat.to_dict() for cat in cats])
 
 
-@app.route('/cats/<int:id>')
-def get_cat(id):
-    cat = Cat.query.filter_by(id=id).first() # filter_by allows us to add filters to our Queries - SELECT * FROM cat WHERE ....
+@app.route('/cats/<int:catId>')
+def get_cat(catId):
+    cat = Cat.query.filter_by(id=catId).first() # filter_by allows us to add filters to our Queries - SELECT * FROM cat WHERE ....
     if cat:
         return jsonify(cat.to_dict())
     else:

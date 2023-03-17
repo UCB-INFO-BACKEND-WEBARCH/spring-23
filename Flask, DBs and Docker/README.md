@@ -19,13 +19,14 @@ We would like to store this information for each cat in a Relational DBMS - in t
 Given that we are all Docker nerds now, instead of installing and setting up Postgres on our machines locally, we will use Docker to set it up and tie it in with our server. To top it all off, we will access our Flask server and the database using a Docker Compose file for ease of use and faster processing.
 
 ## Step 0 - Creating a structure for our application
-
+```
 ├── docker-compose.yml
 ├── init.db.sql
 ├── app
 │ ├── app.py
 │ ├── Dockerfile
 │ └── requirements.txt
+```
 
 We will talk about all of the above files in a moment!
 
