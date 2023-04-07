@@ -69,3 +69,11 @@ Topics we covered:
 3. Using Redis workers
 4. Setting up a worker in Flask
 5. Pushing it all to Docker
+
+## [NoSQL Databases](./NoSQL%20Databases/README.md)
+
+Topics we covered:
+1. What are NoSQL databases? How are they different from SQL databases?
+2. The need for NoSQL databases
+3. Using MongoDB Atlas
+4. MongoDB with Flask
