@@ -77,3 +77,11 @@ Topics we covered:
 2. The need for NoSQL databases
 3. Using MongoDB Atlas
 4. MongoDB with Flask
+
+## [Authorizing API Calls](./Authorization/README.md)
+
+Topics we covered:
+1. Why do we need authorization?
+2. How does authorization usually work? 
+3. Commonly used auth methods in the industry today?
+4. Other uses of authorization tokens!
