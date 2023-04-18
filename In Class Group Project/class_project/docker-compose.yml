@@ -9,6 +9,13 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: data-warehouse 
+  api:
+    build: ./api/
+    image: api-image
+    ports:
+      - "5050:5000"
+    environment:
+      SQLALCHEMY_DATABASE_URI: postgresql://postgres:postgres@db:5432/data-warehouse
 volumes:
   postgres-volume: {}
   
